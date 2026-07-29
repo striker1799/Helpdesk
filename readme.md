@@ -53,12 +53,11 @@ DataDesk/
 ├── main.py # Punto de entrada de la aplicación
 ├── tickets.json # Archivo de datos (se genera automáticamente)
 └── README.md # Documentación del proyecto
+```
 El código sigue el patrón **Separación de Responsabilidades (SoC)**:
 - **`models.py`**: define las clases `Ticket` y `TicketManager` (CRUD, carga/guardado JSON).
 - **`views.py`**: contiene la clase `Aplicacion` (hereda de `tk.Tk`) con todos los widgets y eventos.
 - **`main.py`**: instancia la aplicación e inicia el bucle principal.
-
-```
 
 ## 🚀 Instalación y ejecución
 
