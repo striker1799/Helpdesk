@@ -71,11 +71,12 @@ El código sigue el patrón **Separación de Responsabilidades (SoC)**:
    ```bash
    git clone https://github.com/tu-usuario/DataDesk.git
    cd DataDesk
+   ```
  2. Ejecuta la aplicación:
 
-```bash
-python main.py
-```
+  ```bash
+  python main.py
+  ```
 Usa la aplicación:
 Completa el formulario y haz clic en Crear Ticket.
 
