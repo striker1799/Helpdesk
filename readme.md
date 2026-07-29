@@ -3,7 +3,7 @@
 **Sistema de escritorio para la gestión de tickets de soporte técnico**  
 Desarrollado con **Python**, **Tkinter** y **JSON** como proyecto de portafolio profesional.
 
-![Vista previa de la aplicación](https://via.placeholder.com/800x400?text=DataDesk+en+funcionamiento)  
+![Vista previa de la aplicación]([https://via.placeholder.com/800x400?text=DataDesk+en+funcionamiento](https://i.postimg.cc/KY6qYWjn/ejemplo.png))  
 *(Sustituye esta imagen por una captura real de tu aplicación)*
 
 ---
