@@ -16,7 +16,7 @@ Desarrollada con **Python** y **Tkinter**, aplicando el patrón de diseño **Sep
 ## 📸 Vista previa
 
 ![DataDesk en funcionamiento](https://i.postimg.cc/KY6qYWjn/ejemplo.png)
-
+ 
 *Interfaz principal con tema aqua personalizado, tabla interactiva y panel de métricas.*
 
 ---
