@@ -46,6 +46,7 @@ Desarrollada con **Python** y **Tkinter**, aplicando el patrón de diseño **Sep
 ---
 
 ## 📁 Estructura del proyecto
+```
 DataDesk/
 ├── models.py # Capa de lógica de negocio y persistencia (POO)
 ├── views.py # Capa de interfaz gráfica (Tkinter)
@@ -57,7 +58,7 @@ El código sigue el patrón **Separación de Responsabilidades (SoC)**:
 - **`views.py`**: contiene la clase `Aplicacion` (hereda de `tk.Tk`) con todos los widgets y eventos.
 - **`main.py`**: instancia la aplicación e inicia el bucle principal.
 
----
+```
 
 ## 🚀 Instalación y ejecución
 
