@@ -76,12 +76,7 @@ El código sigue el patrón **Separación de Responsabilidades (SoC)**:
 ```bash
 python main.py
 ```
-También puedes ejecutar directamente views.py:
-
-```bash
-python views.py
 Usa la aplicación:
-```
 Completa el formulario y haz clic en Crear Ticket.
 
 Visualiza los tickets en la tabla.
@@ -107,15 +102,15 @@ Cierra la aplicación, vuelve a abrirla y verifica que los datos persisten.
 Si deseas cambiar los colores del tema, puedes modificar las variables al inicio de __init__ en views.py:
 
 python
-color_fondo = "#E8F4F8"
+```color_fondo = "#E8F4F8"
 color_primario = "#4FC3F7"
-...
+```
 📄 Licencia
 Este proyecto está bajo la licencia MIT.
 Consulta el archivo LICENSE para más detalles (si lo incluyes) o añade el texto estándar de la licencia MIT.
 
 🙋‍♂️ Autor
-Desarrollado por [Tu Nombre] – tu-usuario
+Desarrollado por Robert Alin – striker1799
 Proyecto creado como parte del portafolio profesional para demostrar habilidades en Python, POO, GUI y persistencia de datos.
 
 ⭐ Agradecimientos
