@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "usuario": "aa",
+        "descripcion": "aa",
+        "categoria": "Hardware",
+        "prioridad": "Media",
+        "estado": "Pendiente",
+        "fecha": "29/07/2026 23:15"
+    },
+    {
+        "id": 2,
+        "usuario": "ada",
+        "descripcion": "ada",
+        "categoria": "Hardware",
+        "prioridad": "Media",
+        "estado": "Pendiente",
+        "fecha": "29/07/2026 23:15"
+    }
+]
