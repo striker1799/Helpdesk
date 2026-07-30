@@ -1,58 +1,83 @@
-🖥️ DataDesk – Sistema de Gestión de Tickets de Soporte
-Python Tkinter JSON Licencia Estado
+# 🖥️ DataDesk – Sistema de Gestión de Tickets de Soporte
 
-DataDesk es una aplicación de escritorio para la gestión de tickets de soporte técnico (helpdesk).
-Permite crear, visualizar, filtrar, actualizar el estado y eliminar incidencias, con persistencia en un archivo JSON.
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Tkinter](https://img.shields.io/badge/GUI-Tkinter-orange.svg)
+![JSON](https://img.shields.io/badge/Data-JSON-lightgrey.svg)
+![Licencia](https://img.shields.io/badge/Licencia-MIT-green.svg)
+![Estado](https://img.shields.io/badge/Estado-Terminado-brightgreen.svg)
 
-Desarrollada con Python y Tkinter, aplicando el patrón de diseño Separación de Responsabilidades (SoC) y principios de Programación Orientada a Objetos (POO).
+**DataDesk** es una aplicación de escritorio para la gestión de tickets de soporte técnico (helpdesk).  
+Permite crear, visualizar, filtrar, actualizar el estado y eliminar incidencias, con persistencia en un archivo **JSON**.  
 
-📸 Vista previa
-DataDesk en funcionamiento
+Desarrollada con **Python** y **Tkinter**, aplicando el patrón de diseño **Separación de Responsabilidades (SoC)** y principios de **Programación Orientada a Objetos (POO)**.  
 
-Interfaz principal con tema aqua personalizado, tabla interactiva y panel de métricas.
+---
 
-✨ Características principales
-CRUD completo de tickets (Crear, Leer, Actualizar estado, Eliminar).
-Formulario validado con campos de texto y listas desplegables (categoría, prioridad).
-Tabla interactiva (Treeview) que muestra todos los tickets con columnas ordenadas.
-Columna de fecha automática: cada ticket registra su fecha y hora de creación.
-Buscador en tiempo real: filtra por cualquier campo mientras escribes.
-Panel de métricas: total de tickets, pendientes y resueltos actualizados al instante.
-Confirmaciones y alertas con messagebox (eliminar, marcar resuelto, validaciones).
-Persistencia en JSON: los datos se cargan al iniciar y se guardan automáticamente en cada cambio.
-Interfaz personalizada: tema visual aqua con estilos ttk.Style y colores definidos.
-🛠️ Tecnologías utilizadas
-Python 3.8+ – Lenguaje de programación.
-Tkinter / ttk – Biblioteca estándar para interfaces gráficas.
-JSON – Almacenamiento persistente de datos.
-módulos estándar: datetime, os, tkinter.messagebox.
-Git / GitHub – Control de versiones y publicación del portafolio.
-📁 Estructura del proyecto
+## 📸 Vista previa
+
+![DataDesk en funcionamiento](https://i.postimg.cc/KY6qYWjn/ejemplo.png)
+ 
+*Interfaz principal con tema aqua personalizado, tabla interactiva y panel de métricas.*
+
+---
+
+## ✨ Características principales
+
+- **CRUD completo** de tickets (Crear, Leer, Actualizar estado, Eliminar).
+- **Formulario validado** con campos de texto y listas desplegables (categoría, prioridad).
+- **Tabla interactiva** (`Treeview`) que muestra todos los tickets con columnas ordenadas.
+- **Columna de fecha automática**: cada ticket registra su fecha y hora de creación.
+- **Buscador en tiempo real**: filtra por cualquier campo mientras escribes.
+- **Panel de métricas**: total de tickets, pendientes y resueltos actualizados al instante.
+- **Confirmaciones y alertas** con `messagebox` (eliminar, marcar resuelto, validaciones).
+- **Persistencia en JSON**: los datos se cargan al iniciar y se guardan automáticamente en cada cambio.
+- **Interfaz personalizada**: tema visual *aqua* con estilos `ttk.Style` y colores definidos.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **Python 3.8+** – Lenguaje de programación.
+- **Tkinter / ttk** – Biblioteca estándar para interfaces gráficas.
+- **JSON** – Almacenamiento persistente de datos.
+- **módulos estándar**: `datetime`, `os`, `tkinter.messagebox`.
+- **Git / GitHub** – Control de versiones y publicación del portafolio.
+
+---
+
+## 📁 Estructura del proyecto
+```
 DataDesk/
 ├── models.py # Capa de lógica de negocio y persistencia (POO)
 ├── views.py # Capa de interfaz gráfica (Tkinter)
 ├── main.py # Punto de entrada de la aplicación
 ├── tickets.json # Archivo de datos (se genera automáticamente)
 └── README.md # Documentación del proyecto
-El código sigue el patrón Separación de Responsabilidades (SoC):
+```
+El código sigue el patrón **Separación de Responsabilidades (SoC)**:
+- **`models.py`**: define las clases `Ticket` y `TicketManager` (CRUD, carga/guardado JSON).
+- **`views.py`**: contiene la clase `Aplicacion` (hereda de `tk.Tk`) con todos los widgets y eventos.
+- **`main.py`**: instancia la aplicación e inicia el bucle principal.
 
-models.py: define las clases Ticket y TicketManager (CRUD, carga/guardado JSON).
-views.py: contiene la clase Aplicacion (hereda de tk.Tk) con todos los widgets y eventos.
-main.py: instancia la aplicación e inicia el bucle principal.
-🚀 Instalación y ejecución
-Requisitos previos
-Tener instalado Python 3.8 o superior.
-No se necesitan dependencias externas (Tkinter viene incluido en la instalación estándar de Python).
-Pasos para ejecutar
-Clona el repositorio:
+## 🚀 Instalación y ejecución
+
+### Requisitos previos
+- Tener instalado **Python 3.8 o superior**.
+- No se necesitan dependencias externas (Tkinter viene incluido en la instalación estándar de Python).
+
+### Pasos para ejecutar
+
+1. Clona el repositorio:
+```bash
   git clone https://github.com/tu-usuario/DataDesk.git
   cd DataDesk
-Clona el repositorio:
-git clone https://github.com/tu-usuario/DataDesk.git
-cd DataDesk
-Ejecuta la aplicación:
+   ```
+2. Ejecuta la aplicación:
+```bash
 python main.py
-Usa la aplicación: Completa el formulario y haz clic en Crear Ticket.
+```
+Usa la aplicación:
+Completa el formulario y haz clic en Crear Ticket.
 
 Visualiza los tickets en la tabla.
 
@@ -62,7 +87,8 @@ Selecciona un ticket y usa los botones Marcar como Resuelto o Eliminar.
 
 Los cambios se guardan automáticamente en tickets.json.
 
-🧪 Cómo probar las funcionalidades Crea varios tickets con diferentes categorías y prioridades.
+🧪 Cómo probar las funcionalidades
+Crea varios tickets con diferentes categorías y prioridades.
 
 Utiliza el buscador para filtrar por usuario, estado o cualquier palabra.
 
@@ -72,13 +98,21 @@ Elimina un ticket y confirma la acción en el diálogo.
 
 Cierra la aplicación, vuelve a abrirla y verifica que los datos persisten.
 
-🎨 Personalización Si deseas cambiar los colores del tema, puedes modificar las variables al inicio de init en views.py:
+🎨 Personalización
+Si deseas cambiar los colores del tema, puedes modificar las variables al inicio de __init__ en views.py:
 
 python
-
+```color_fondo = "#E8F4F8"
 color_primario = "#4FC3F7"
-📄 Licencia Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles (si lo incluyes) o añade el texto estándar de la licencia MIT.
+```
+📄 Licencia
+Este proyecto está bajo la licencia MIT.
+Consulta el archivo LICENSE para más detalles (si lo incluyes) o añade el texto estándar de la licencia MIT.
 
-🙋‍♂️ Autor Desarrollado por Robert Alin – striker1799 Proyecto creado como parte del portafolio profesional para demostrar habilidades en Python, POO, GUI y persistencia de datos.
+🙋‍♂️ Autor
+Desarrollado por Robert Alin – striker1799
+Proyecto creado como parte del portafolio profesional para demostrar habilidades en Python, POO, GUI y persistencia de datos.
 
-⭐ Agradecimientos Si este proyecto te resulta útil, ¡no olvides darle una estrella en GitHub! Cualquier sugerencia o mejora es bienvenida a través de issues o pull requests.
+⭐ Agradecimientos
+Si este proyecto te resulta útil, ¡no olvides darle una estrella en GitHub!
+Cualquier sugerencia o mejora es bienvenida a través de issues o pull requests.
